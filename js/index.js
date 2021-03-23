@@ -23,7 +23,7 @@
 
 anime ({
     targets : 'div.cards h1',
-    translateX: 0,
-    duration: 2000,
-    easing: 'easeOutSine',
+    translateX: [600, 0],
+    duration: 1000,
+    easing: 'easeInOutQuad'
 });
