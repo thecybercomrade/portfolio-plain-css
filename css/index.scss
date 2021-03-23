@@ -19,6 +19,17 @@ body {
   padding: 0 40px;
 }
 
+.btn {
+  width: 8em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color:  #86c232;
+  color: #212121;
+}
+
 :root {
   --background-color: #212121;
   --primary-color: #86c232;
@@ -228,3 +239,42 @@ nav {
     }
   }
 }
+
+// about me
+.about-me-section {
+  
+  margin-top: 2em;
+  padding: 10px;
+
+  .container {
+    height: 20vh;
+  }
+  
+  .github {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    justify-content: center;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    i {
+      margin-left: 20px;
+    }
+  }
+
+  .about-me-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+      .about-me-btn {
+        text-decoration: none;
+      }
+}
+
