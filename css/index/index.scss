@@ -1,3 +1,6 @@
+// imports
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 // basic settings
 
 :root {
@@ -14,7 +17,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 // Nav Bar Section
@@ -24,61 +27,42 @@ nav {
   grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   color: aliceblue;
 
+  font-family: "Pacifico", "Times New Roman", Times, serif;
+
   .logo {
     grid-column: 2 / span 1;
     padding: 20px;
   }
 
-  .nav-links  {
+  .nav-links {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
 
-      ul{
-        display: flex;
+      li {
         list-style: none;
-        justify-content: flex-end;
-        height: 100%;
-        align-items: center;
-    
-        li {
-            padding: 1.5em;
-        }
-        
-        li a {
-            text-decoration: none;
-            color: aliceblue;
-        }
       }
-  }
 
-}
+      a {
+        text-decoration: none;
+        padding: 1em;
+        color: aliceblue;
+      }
 
-//px and below 
-
-@media (max-width: 1100px) {
-  body {
-    background-color: lightseagreen;
-  }
-
-  nav > .nav-links > ul > li {
-    padding: 1em;
-}
-}
-
-@media (max-width: 720px) {
-    body {
-      background-color: firebrick;
+      a:hover {
+          color: var(--primary-color);
+      }
     }
-
-    
   }
 
-@media (max-width: 640px) {
-  body {
-    background-color: lightgreen;
+  .menu-logo {
+    display: none;
   }
-}
 
-@media (max-width: 480px) {
-  body {
-    background-color: coral;
+  i.fas.fa-times {
+    margin-left: -16px;
+    display: none;
   }
 }
