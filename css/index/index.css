@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+:root {
+  --background-color: #212121;
+  --primary-color: #86c232;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto minmax(600px, 3fr) 1fr;
+      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  color: aliceblue;
+  font-family: "Pacifico", "Times New Roman", Times, serif;
+}
+
+nav .logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  padding: 20px;
+}
+
+nav .nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+nav .nav-links ul li {
+  list-style: none;
+}
+
+nav .nav-links ul a {
+  text-decoration: none;
+  padding: 1em;
+  color: aliceblue;
+}
+
+nav .nav-links ul a:hover {
+  color: var(--primary-color);
+}
+
+nav .menu-logo {
+  display: none;
+}
+
+nav i.fas.fa-times {
+  margin-left: -16px;
+  display: none;
+}
+/*# sourceMappingURL=index.css.map */

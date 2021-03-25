@@ -1,0 +1,64 @@
+//px and below
+
+@media (max-width: 1100px) {
+}
+
+@media (max-width: 730px) {
+
+  // Nav Bar
+  .nav-links {
+
+    display: none;
+    
+    ul {
+      list-style: none;
+
+      li {
+        padding: 0.5em;
+
+        a {
+          color: aliceblue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  nav {
+    grid-template-columns: 50% 50%;
+
+    .logo {
+      grid-column: 1 / 2;
+    }
+
+    .menu-logo {
+      grid-column: 2 / 3;
+    }
+
+    .nav-links {
+      grid-column: 1 / span 2;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      animation: slideIn 400ms ease-in-out forwards;
+    }
+  }
+
+  nav > .menu-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 640px) {
+
+}
+
+@media (max-width: 480px) {
+
+}

@@ -1,0 +1,68 @@
+// imports
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+// basic settings
+
+:root {
+  --background-color: #212121;
+  --primary-color: #86c232;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+// Nav Bar Section
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  color: aliceblue;
+
+  font-family: "Pacifico", "Times New Roman", Times, serif;
+
+  .logo {
+    grid-column: 2 / span 1;
+    padding: 20px;
+  }
+
+  .nav-links {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        padding: 1em;
+        color: aliceblue;
+      }
+
+      a:hover {
+          color: var(--primary-color);
+      }
+    }
+  }
+
+  .menu-logo {
+    display: none;
+  }
+
+  i.fas.fa-times {
+    margin-left: -16px;
+    display: none;
+  }
+}
