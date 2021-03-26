@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 :root {
   --background-color: #212121;
   --primary-color: #86c232;
+  --body-font: "Merriweather";
+  --nav-font: "Pacifico";
+  --number-font: "Abril";
 }
 
 *,
@@ -15,6 +20,7 @@
 
 body {
   background-color: var(--background-color);
+  font-family: var(--body-font);
 }
 
 nav {
@@ -67,5 +73,83 @@ nav .menu-logo {
 nav i.fas.fa-times {
   margin-left: -16px;
   display: none;
+}
+
+.banner-section {
+  background-color: aliceblue;
+  height: 30em;
+}
+
+.banner-section .container {
+  height: inherit;
+}
+
+.banner-section .banner {
+  height: inherit;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 30% 50%;
+      grid-template-columns: 25% 30% 50%;
+  gap: 1.5em;
+}
+
+.banner-section .banner .avatar {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-section .banner .avatar .avatar-img {
+  margin-top: 2em;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 5px var(--primary-color);
+          box-shadow: 0 3px 5px var(--primary-color);
+  height: 10em;
+  width: 10em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-section .banner .avatar p {
+  text-align: left;
+  padding: 1.5em 1em;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.banner-section .banner .about {
+  padding: 2em 0px 2em 2em;
+}
+
+.banner-section .banner .about p {
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+
+.banner-section .banner .about .passion {
+  margin: 2em 0px;
+  letter-spacing: 0px;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.banner-section .banner .about .passion span {
+  color: var(--primary-color);
+  letter-spacing: 0.1em;
 }
 /*# sourceMappingURL=index.css.map */

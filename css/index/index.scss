@@ -1,11 +1,16 @@
 // imports
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
 // basic settings
 
 :root {
   --background-color: #212121;
   --primary-color: #86c232;
+  --body-font: "Merriweather";
+  --nav-font: "Pacifico";
+  --number-font: "Abril";
 }
 
 *,
@@ -18,6 +23,7 @@
 
 body {
   background-color: var(--background-color);
+  font-family: var(--body-font);
 }
 
 // Nav Bar Section
@@ -52,7 +58,7 @@ nav {
       }
 
       a:hover {
-          color: var(--primary-color);
+        color: var(--primary-color);
       }
     }
   }
@@ -64,5 +70,75 @@ nav {
   i.fas.fa-times {
     margin-left: -16px;
     display: none;
+  }
+}
+
+// Banner section
+.banner-section {
+  background-color: aliceblue;
+  height: 30em;
+
+  .container {
+    height: inherit;
+  }
+
+  .banner {
+    height: inherit;
+    display: grid;
+    grid-template-columns: 25% 30% 50%;
+    gap: 1.5em;
+
+    // avatar
+    .avatar {
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .avatar-img {
+        margin-top: 2em;
+        border-radius: 50%;
+        box-shadow: 0 3px 5px var(--primary-color);
+        height: 10em;
+        width: 10em;
+        align-items: center;
+        justify-content: center;
+      }
+
+      p {
+        text-align: left;
+        padding: 1.5em 1em;
+        font-size: 2em;
+        letter-spacing: 0.1em;
+        font-weight: 200;
+        text-transform: uppercase;
+      }
+    }
+
+    // about
+    .about {
+      padding: 2em 0px 2em 2em;
+
+      p {
+        font-size: 2em;
+        letter-spacing: 0.2em;
+        font-weight: 600;
+      }
+
+      .passion {
+        margin: 2em 0px;
+        letter-spacing: 0px;
+        font-size: 1.2em;
+        line-height: 2em;
+
+        span {
+          color: var(--primary-color);
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+
+    // card
+
   }
 }
